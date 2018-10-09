@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>position</title>
+    <style>
+        .div1 {
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            position: relative;
+            left: 0;
+            top: 100px;
+        }
+
+        .div2 {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            position: relative;
+            left: 0;
+            top: -50px;
+        }
+        .div3 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            right: 50px; /*当设置了right和bottom是元素的位移方向与left和top是相反的*/
+            bottom: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+</body>
+
+</html>
