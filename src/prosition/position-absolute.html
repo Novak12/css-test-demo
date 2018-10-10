@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>position static</title>
+    <style>
+        .div1 {
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            position: absolute;
+            left: 0;
+            top: 0px;
+        }
+
+        .div2 {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            position: absolute;
+            left: 50px;
+            top: -50px;
+        }
+
+        .div3 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            right: 50px;
+            bottom: 100px;
+        }
+
+        .div4 {
+            width: 500px;
+            height: 500px;
+            background-color: #124677;
+            position: static;
+            right: 0px;
+            bottom: 0px;
+        }
+
+        .div5{
+            width: 1000px;
+            height: 600px;
+            background-color: #777;
+            position: relative;
+            right: 0px;
+            bottom: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div5">
+        <div class="div4">
+            <div class="div1"></div>
+            <div class="div2"></div>
+            <div class="div3"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
