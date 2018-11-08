@@ -23,6 +23,8 @@
     <!--粗体-->
     <p>我在慕课网上跟<em>大漠</em>一起学习<i>Bootstrap</i>的使用。我一定要学会<i>Bootstrap</i>。</p>
     <!--斜体-->
+    <pre><p>这里是一段文字，不会被解析</p><br /><div>kaivon</div></pre>
+    <!--显示代码块-->
 
     <div class="text-muted">.text-muted 效果</div>
     <div class="text-primary">.text-primary效果</div>
@@ -35,14 +37,184 @@
     <p class="text-center">我居中</p>
     <p class="text-right">我居右</p>
     <p class="text-justify">两端对齐</p>
-    
+
     <dl>
         <dt>定义列表标题</dt>
         <dd>列表信息1</dd>
         <dd>列表信息2</dd>
     </dl>
+    <h5>普通列表</h5>
+    <ul>
+        <li>列表项目</li>
+        <li>列表项目</li>
+        <li>列表项目</li>
+        <li>列表项目</li>
+        <li>列表项目</li>
+    </ul>
+    <h5>有序列表</h5>
+    <ol>
+        <li>项目列表一</li>
+        <li>项目列表二</li>
+        <li>项目列表三</li>
+    </ol>
+
+    <ol>
+        <li>有序项目列表一</li>
+        <li>有序项目列表二</li>
+        <ol class="list-unstyled">
+            <li>有序二级列表项目列表一</li>
+            <li>有序二级列表项目列表二</li>
+            <ul>
+                <li>无序三级项目列表一</li>
+                <li>无序三级列表项目二</li>
+                <ul class="list-unstyled">
+                    <li>无序四级项目列表一</li>
+                    <li>无序四级列表项目二</li>
+                </ul>
+                <li>无序三级项目列表三</li>
+            </ul>
+            <li>有序二级项目列表三</li>
+        </ol>
+        <li>有序项目列表三</li>
+    </ol>
+
+    <ul class="list-inline">
+        <li>W3cplus</li>
+        <li>Blog</li>
+        <li>CSS3</li>
+        <li>jQuery</li>
+        <li>PHP</li>
+    </ul>
+
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>类名</th>
+                    <th>描述</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="active">
+                    <td>.active</td>
+                    <td>表示当前活动的信息</td>
+                </tr>
+                <tr class="success">
+                    <td>.success</td>
+                    <td>表示成功或者正确的行为</td>
+                </tr>
+                <tr class="info">
+                    <td>.info</td>
+                    <td>表示中立的信息或行为</td>
+                </tr>
+                <tr class="warning">
+                    <td>.warning</td>
+                    <td>表示警告，需要特别注意</td>
+                </tr>
+                <tr class="danger">
+                    <td>.danger</td>
+                    <td>表示危险或者可能是错误的行为</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <form action="#" class="form-inline">
+                <!--<div class="form-group">-->
+                <label for="userName">用户名</label>
+                <input type="text" id="userName" class="form-control" />
+                <!--</div>-->
+
+                <!--<div class="form-group">-->
+                <label for="password">密码</label>
+                <input type="password" id="password" class="form-control" />
+                <!--</div>-->
+            </form>
+        </div>
+    </div>
+    <br/>
+
+    <div class="container">
+        <div class="row">
+            <form action="#" class="form-horizontal">
+                <div class="form-group">
+                    <label for="userName" class="col-lg-1 control-label">用户名</label>
+                    <div class="col-lg-11">
+                        <input type="text" id="userName" class="form-control" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password" class="col-lg-1 control-label">密码</label>
+                    <div class="col-lg-11">
+                        <input type="password" id="password" class="form-control" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-lg-1 col-lg-offset-1">
+                        <input type="button" value="登录" class="btn" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 
 
+    <div class="container">
+        <!--单个按钮-->
+        <div class="row">
+            <button class="btn btn-primary">kaivon</button>
+            <button class="btn btn-success">kaivon</button>
+            <button class="btn btn-info">kaivon</button>
+        </div>
+
+        <!--按钮组-->
+        <div class="row" style="margin-top: 10px;">
+            <div class="btn-group">
+                <button class="btn btn-primary">kaivon</button>
+                <button class="btn btn-success">kaivon</button>
+                <button class="btn btn-info">kaivon</button>
+            </div>
+        </div>
+
+        <!--按钮组,竖着排-->
+        <div class="row" style="margin-top: 10px;">
+            <div class="btn-group-vertical">
+                <button class="btn btn-primary">kaivon</button>
+                <button class="btn btn-success">kaivon</button>
+                <button class="btn btn-info">kaivon</button>
+            </div>
+        </div>
+
+        <!--给按钮添加三角形-->
+        <div class="row" style="margin-top: 10px;">
+            <div class="btn-group">
+                <button class="btn btn-primary">kaivon <span class="caret"></span></button>
+                <a href="#" class="btn btn-success">kaivon <span class="caret"></span></a>
+                <input type="button" class="btn btn-info" value="kaivon" /> <span class="caret"></span>
+                <!--input标签的使用有所不同-->
+            </div>
+        </div>
+    </div>
+
+    <!--下拉菜单-->
+    <div class="container">
+        <div class="row">
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">前端 <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">html</a></li>
+                    <li><a href="#">css</a></li>
+                    <li><a href="#">javascript</a></li>
+                    <li><a href="#">less</a></li>
+                    <li><a href="#">bootstrap</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
     <script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </body>
